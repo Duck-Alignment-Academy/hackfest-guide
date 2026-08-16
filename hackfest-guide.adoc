@@ -1,0 +1,8 @@
+= Maintainer's Guide to Hackfests
+Ben Cotton <quack@duckalignment.academy>
+0.1, August 2026, Writing the thing
+:doctype: book
+:backend: docbook
+:url-repo: https://github.com/Duck-Alignment-Academy/hackfest-guide
+
+include::frontmatter.adoc[]

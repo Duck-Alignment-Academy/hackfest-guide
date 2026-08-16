@@ -1,0 +1,33 @@
+[preface]
+== Frontmatter
+=== Version History
+
+It's still a work in progress.
+Relax.
+
+=== Credits
+
+* Written by https://duckalignment.academy[Ben Cotton]
+
+=== License and contributions
+
+This book is distributed under the https://creativecommons.org/licenses/by-sa/4.0/[Creative Commons Attribution-ShareAlike (CC BY-SA) 4.0 International] license.
+You may share and adapt this work, so long as you provide appropriate credit, indicate any changes you have made, and share it under the same license.
+You may not impose additional restrictions.
+
+Human contributions are welcome!
+If you have questions, suggestions, or find a mistake, please https://github.com/Duck-Alignment-Academy/hackfest-guide/issues[submit an issue] on the GitHub repo.
+You are also welcome to submit a pull request for any valid issue.
+
+=== About the author
+
+Ben Cotton is the Open Source & Ecosystem Lead at Kusari.
+He previously led open source strategy and messaging at Docker and before that was the Fedora Program Manager at Red Hat for five years.
+This guide, of course, does not represent the views of any current or past employer.
+Ben has been active in Fedora and other open source communities for nearly two decades.
+His career has taken him through the public and private sector in roles that include desktop support, high-performance computing administration, marketing, and program management.
+In addition to writing https://pragprog.com/titles/bcosp/program-management-for-open-source-projects/[_Program Management for Open Source Projects_], Ben has contributed to the book http://theopenorganization.org/books/#guide-to-distributed-teamwork[_Human at a Distance_], and to articles in _The Next Platform_, Opensource.com, Scientific Computing, and more.
+Ben is a 2025 recipient of the OpenSSF Golden Egg Award and a member of the inaugural cohort of OpenSSF Ambassadors.
+
+Ben still lives in Lafayette, Indiana — a city he forgot to leave after graduating from Purdue University with a bachelor of science in synoptic meteorology and a master of science in IT project management.
+Should you feel brave, you can follow Ben on https://hachyderm.io/@funnelfiasco[Mastodon], https://bsky.app/profile/funnelfiasco.bsky.social[Bluesky], his https://funnelfiasco.com/[personal website], or https://www.linkedin.com/in/bcotton/[LinkedIn].

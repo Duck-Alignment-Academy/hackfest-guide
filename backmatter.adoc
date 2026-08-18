@@ -1,5 +1,5 @@
 [preface]
-== Frontmatter
+== Backmatter
 === Version History
 
 It's still a work in progress.

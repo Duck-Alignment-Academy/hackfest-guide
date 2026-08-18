@@ -1,0 +1,81 @@
+
+== Before the event
+
+A successful hackfest starts with preparing ahead of time.
+Getting your project organized ahead of time means you can spend the event focusing on guiding your contributors.
+
+=== Policy setup
+
+In general, the smaller your project, the less policy structure you need.
+But a non-zero sized project requires a non-zero sized set of policies.
+(Note that I'm assuming you already have a license.
+If not, you are way too far ahead of yourself.)
+
+You policies don't need to be complicated.
+For a small project, a sentence or two may be sufficient in some areas.
+The goal is to clearly communicate the project's way of working, both as instruction to newcomers and a reminder to experience contributors.
+
+==== Code of conduct
+
+This is one area where I advocate for having a well-defined policy https://duckalignment.academy/code-conduct-enforcement-planning/[ahead of time].
+You don't want to be building your code of conduct — particularly the enforcement mechanism — on the fly.
+That leads to inconsistent decisions and a process that at least _seems_ unfair.
+Both of these can be very harmful to community cohesion.
+
+The point of a code of conduct is to give a https://duckalignment.academy/define-good-behavior/[shared definition of "good" behavior] in human-to-human interactions.
+Most people will want to follow the rules of a community.
+It’s how community works.
+But you can’t rely on everyone having the same unspoken expectations.
+Think of it this way:
+having rules and policies for behavior in your community is like documenting the community’s API.
+
+In general, I suggest copying an established code of conduct for your community.
+The https://www.contributor-covenant.org/[Contributor Covenant] is a flexible, widely-adopted code of conduct.
+If you do decide to write your own, include:
+
+* what behaviors you want to encourage and prohibit
+* where the policy applies
+* how reports are submitted
+* who enforces the code of conduct
+* what consequences exist for violations
+
+Remember that the point of enforcement is not to be punitive, but to encourage pro-community behavior.
+Also bear in mind that for larger communities, enforcement can be a significant emotional burden on those tasked with it.
+
+Ultimately, you can set whatever code of conduct you want for your project.
+Enforce it consistently, and you'll get the kind of behavior the code defines as good.
+
+==== Contribution policy
+
+==== AI Policy
+
+==== Security policy
+
+
+=== Codebase setup
+
+==== Plan your roadmap
+
+==== Open issues
+
+==== Improve your docs
+
+==== Set code style requirements
+
+=== Repo setup
+
+==== Tags
+
+==== CI workflows
+
+==== Security settings
+
+==== Issue templates
+
+=== Community setup
+
+==== How will people communicate?
+
+==== Can anyone help you?
+
+=== Gifts?

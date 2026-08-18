@@ -7,5 +7,6 @@ Ben Cotton <quack@duckalignment.academy>
 
 
 include::introduction.adoc[]
+include::before.adoc[]
 
 include::backmatter.adoc[]

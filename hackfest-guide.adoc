@@ -6,3 +6,4 @@ Ben Cotton <quack@duckalignment.academy>
 :url-repo: https://github.com/Duck-Alignment-Academy/hackfest-guide
 
 include::frontmatter.adoc[]
+include::introduction.adoc[]

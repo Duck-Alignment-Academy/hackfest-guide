@@ -1,0 +1,108 @@
+
+== Introduction
+
+Welcome!
+If you're reading this book, you're probably a maintainer of an open source project who is thinking about participating in some kind of hackfest like Hacktoberfest.
+If you're looking for a guide on how to contribute to a project during a hackfest, this is not what you're looking for.
+The good news is that you got this little guide for free!
+
+Still with me?
+Great!
+I'm going to do my best to make the process as easy as possible by sharing the lessons I've learned directly and from watching others over the last twenty years of participating in open source projects.
+But before I start handing out any advice, you need to decide if this is really what you want to do.
+
+=== Understand what you're getting into
+
+You already know that maintaining an open source project is hard work.
+The good news is that adding new contributors makes it harder.
+Oops!
+
+
+Many hands may make light work, but first you have to train and coordinate those hands.
+This hard work can be just as rewarding as anything else you do on your project, so long as you're prepared.
+Otherwise, it's just a frustrating mess that shortens your road to burnout.
+
+Like most things in life, participating in a hackfest has plusses and minuses.
+
+On the plus side, you can get more attention for your project.
+You get new contributors (some of whom may even stick around) and potentially new users, too.
+These contributors find and fix bugs, contribute new features, and otherwise make your project better.
+Plus, you get a chance to meet and mentor new people, some of whom may end up being your friend.
+
+On the minus side, you can get more attention for your project.
+You have a deluge of poorly-written contributions from people who don't understand your project at all.
+They contribute "features" that are out of scope, fix security issues that aren't actually exploitable, and otherwise overwhelm you with project management tasks that distract you from the fun parts of maintaining the project.
+You may never want to interact with another human being again.
+
+Okay, maybe I'm being a little dramatic with the minuses, but there are real drawbacks.
+Hacktoberfest started out with a simple process:
+get four pull requests merged and you get a free t-shirt.
+The simplicity was great for contributors (and the t-shirts were so soft!) but it was unpleasant for maintainers.
+Over the years, the Hacktoberfest organizers changed the rules.
+They cracked down on meaningless projects that existed just to get people's pull requests merged.
+They changed the rules to require maintainers to opt-in to having their projects count.
+Maintainers could apply the "spam" label to a pull request to keep it from counting.
+
+This helped the situation, but it was still not always a great experience for maintainers.
+With the increasing availability and power of large language models, it became easier for people to have the robots make their pull requests.
+The goal of having new contributors learn about open source was lost —
+you don't learn much if you're not even writing the code.
+
+In 2024, the GUAC project included a couple repos in Hacktoberfest.
+One of the open issues was writing a documentation page for an un-documented command.
+GUAC is a software supply chain knowledge graph, so you can imagine my dismay when someone opened a pull request that described a guacamole recipe manager.
+Events like Hacktoberfest have long atracted both the committed and the lazy, but generative AI gives the lazy an uncontrolled weapon.
+
+I'm not trying to scare you off.
+Hackfests can be a great experience for you and your project.
+Then can also be awful.
+Let's make an informed decision.
+
+=== Choosing to participate
+
+==== Why are you doing this?
+
+In https://pragprog.com/titles/bcosp/program-management-for-open-source-projects/[_Program Management for Open Source Projects_], I spend a lot of time talking about being intentional.
+There's rarely a "right" and "wrong"; it's usually "right for what I want to accomplish" and "wrong for what I want to accomplish".
+So the first thing you need to do if you're going to participate in an event is to understand your intent.
+What is your goal in participating?
+
+The "plusses" discussion a few paragraphs up covers a lot of the reasons you might decide to participate.
+You may also come up with your own.
+Ultimately, it doesn't really matter _what_ your reason is, so long as you have one that you can clearly articulate.
+
+==== What does success look like?
+
+Once you have your motivation in hand, you need to figure out how you'll know if your participation was a success.
+Why?
+If it's not a success, you should either change your approach or not participate next time.
+
+"Success" isn't alwys clear-cut.
+You may have several dimensions that you want to judge on.
+Some of them might not be evident for weeks or months after the event.
+Here are some ideas to get you started, but you'll have to pick — and adjust — what's appropriate for your goals.
+
+* **New contributors.**
+One common goal is simply to get more people involved in the project.
+This is also a default measure for when your actual goal is to give others the opportunity to gain open source experience.
+* **Retained new contributors.**
+Getting contributors is one thing.
+Keeping them is another.
+But contributors that stick around keep your project sustainable, so this might be a goal for you beyond a simple new contributor count.
+The downside is that you can't know if someone has stuck around for at least a few months.
+* **Valid pull requests opened.**
+Perhaps you're less concerned about the number of people versus the quanity of contributions.
+Does it matter to you if one person opened four pull requests or if four people opened one apiece?
+* **Valid pull requests merged.**
+Or maybe you should only count it if the contirubtion actually lands.
+* **Bugs fixed.**
+Maybe your goal is fixing some of the backlog of bugs that you've been meaning to get to.
+* **Features implemented.**
+Or adding new features from the roadmap that you haven't had time to work on.
+* **Increased downloads.**
+You might participate as a way to increase awareness of your project, in which case an increase in downloads is the measure of success you're looking for.
+* **Stars.**
+Or maybe you want your star count to go up.
+
+Whatever your definition of success, you want to be sure it's something that you can actually measure and that it's meaningful to the goal you've set.
+You don't want to end up in a position where you've done all of the work and then can't tell if it was worthwhile.

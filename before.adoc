@@ -47,6 +47,52 @@ Enforce it consistently, and you'll get the kind of behavior the code defines as
 
 ==== Contribution policy
 
+Your project's contribution policy defines the process for submitting a quality contribution and your project's definition of _quality_.
+Calling it a "policy" is, perhaps, too strong of a term for most projects.
+It tends to be more of a "best practices" document for all but the largest projects where strict policy enforcement becomes necessary.
+
+Although there's no agreed upon standard for a contribution policy, a search of your favorite git forge for "CONTRIBUTING.md" will turn up roughtly eleventy billion examples that you can use as inspiration.
+Some things to consider for your contribution policy:
+
+* **Scope.**
+Your project won't do everything.
+Where are the boundaries for the kinds of contributions you'll accept?
+Do you care about typo fixes that don't affect the meaning of docs or websites?
+Will you accept new features that aren't already on your roadmap?
+What hardware and operating systems do you care to support?
+The most technically-brilliant contribution is of no use if it's not something you're willing to accept.
+This is an important line to draw because otherwise you will end up stuck supporting something that you have no ability or desire to maintain.
+* **Issue creation requirements.**
+Does your project require https://duckalignment.academy/adding-pre-report-bug-discussion/[discussion before creating an issue] for a bug report or feature?
+Must bug reports be accompanied by a reproducer?
+Do bug reports have to be tested against the latest release or the latest commit?
+* **Pull request creation requirements.**
+Does a pull request need to have an associated issue first?
+Does the issue need to be assigned first?
+* **Code style requirements.**
+What sort of formatting and syntax requirements do you have?
+Tabs or spaces?
+Fixed-width prose, sentence-per-line, or https://sembr.org/[semantic line breaks]?
+* **Testing requirements.**
+Do new features have to have tests?
+What about changes to un-tested parts of the code base: does a fix there require the addition of a test?
+How comprehensive must tests be?
+* **Legal-adjacent requirements.**
+Does your project require all commits to carry a https://developercertificate.org/[developer certificate of origin] (DCO) signoff?
+If not, you'll want to explicitly indicate that contributions are accepted under the project's license ("inbound equals outbound").
+* **Branching process.**
+What branch should a contribution target?
+In other words, is everything against `main` or do you keep release or feature branches separate long-term?
+If you maintain multiple branches, how does a would-be contributor know which one to target?
+* **Review process.**
+Who reviews contributions?
+What do they check for?
+What automated tests (if any) must pass before a contribution can be accepted?
+What should the submitter do if they don't get a response (and how long should they wait)?
+
+If it's not in a separate `GOVERNANCE.md` document, your contribution policy may also include a list of roles in the project, their responsibilities and privileges, and how people move up that ladder.
+This isn't strictly necessary for new hackfest contributors, but it will be come relevant if some of them stick around for the longer term.
+
 ==== AI Policy
 
 ==== Security policy

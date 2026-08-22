@@ -11,6 +11,12 @@ Great!
 I'm going to do my best to make the process as easy as possible by sharing the lessons I've learned directly and from watching others over the last twenty years of participating in open source projects.
 But before I start handing out any advice, you need to decide if this is really what you want to do.
 
+A couple of quick notes to the reader before we move on.
+First, this guide is largely written with Hacktoberfest in mind.
+Second, for the sake of simplicity, I will probably use GitHubisms like "pull request" throughout.
+This makes the wording less cumbersome, but it should be understood in a general sense.
+Your platform of choice may use a different term for the same concept.
+
 === Understand what you're getting into
 
 You already know that maintaining an open source project is hard work.

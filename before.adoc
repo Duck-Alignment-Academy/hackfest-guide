@@ -95,6 +95,33 @@ This isn't strictly necessary for new hackfest contributors, but it will be come
 
 ==== AI Policy
 
+However you feel about AI, it's being used a lot these days.
+If you have a strong opinion, you'll need a policy.
+If you haven't given it much thought yet, now's the time.
+Even if you haven't had to deal with AI contributions yet, it's almost certain that you will once you participate in a hackfest.
+I maintain a https://duckalignment.academy/resources/ai-policy-resources/[list of AI policies] used by various projects that you can use as a starting point for creating your own.
+
+Your policy can fall anywhere on a spectrum from "complete and total ban" to "I do not care".
+I find Daniel Miessler's https://danielmiessler.com/blog/ai-influence-level-ail[AI Influence Level] (AIL) system to be a good conceptual framework.
+You can pick the highest number you're willing to accept and use that as a starting point for creating your policy.
+
+A "no AI usage at all" policy doesn't have to be very complicated.
+if you allow some amount of AI usage, then you'll want to consider if and how you want it disclosed.
+Some projects, like the Linux kernel, have a https://docs.kernel.org/process/coding-assistants.html#attribution[defined attribution style] to follow.
+On the other hand, Kubernetes https://www.kubernetes.dev/docs/guide/pull-requests/#ai-guidance[expressly forbids] commit message trailers to prevent unscrupulous vendors from using that for marketing.
+
+In addition to use and disclosure rules, there's one more thing you'll want to consider:
+can AI be used on "good first issues"…issues?
+More specifically, perhaps, can autonomous AI agents contribute to those issues?
+This may be something you want to special-case for a hackfest, depending on the reasons for participation that you came up with.
+If you're participating in the event with a primary purpose of helping new contributors get experience in open source software, then letting AI agents grab the "good first issue" issues defeats the purpose.
+Personally, I think anything that you took the time to mark as a good first issue should be left for the newcomer humans to work on.
+
+Once you've developed an AI policy, you should put the bits that you want AI tools to know about in an https://agents.md/[AGENTS.md file].
+This has become a quasi-standard way of providing AI-specific instructions.
+Of course, there's no guarantee that the model will follow it.
+
+
 ==== Security policy
 
 

@@ -176,6 +176,51 @@ If your motivation for participating in the event includes getting work done on 
 
 ==== Set code style requirements
 
+I briefly mentioned code style requirements in the "Contribution policy" section above.
+Now let's talk about this in a little more detail.
+The purpose of a style guide is to keep the code looking consistent.
+This is less for visual appeal than it is for avoiding confusion.
+When all of your functions and varible names have the same style, you can focus your understanding on the code itself.
+
+You don't _need_ to have a code style guide if your project is small and you truly do not care.
+The point of a style guide isn't to establish the One True Way™ that everyone must write code, it's to establish a common practice.
+As your project grows in complexity and/or your community grows in size, your style guide will need to grow with it.
+https://google.github.io/styleguide/[Google's style guides] are lengthy and well-organized.
+You don't need to go to that level.
+
+Here's what you may want to include in your style guide:
+
+* **Variable and function name styles.**
+Are you a `camelCase` person or do you prefer `snake_case` or `kebab-case`?
+Do you want constants in all caps?
+Do you want variables to be nouns and functions to be verby in name?
+* **Tabs or spaces (and how many).**
+No, seriously.
+* **Bracket positions.**
+Do they belong on the same line?
+If they're on a different line, where do you indent them to?
+* **Line length.**
+Are you still rocking an 80-character terminal?
+* **Docmentation requirements.**
+How much documentation needs to be in the code?
+What should it look like?
+* **Language-specific features to use (or avoid).**
+For example, are global variables acceptable always, sometimes, or never?
+* **Error handling process.**
+How strict do you want to be about catching errors?
+How do you want those errors presented to the user?
+* **File naming.**
+How should new files be arranged in the repo?
+What sort of naming style do you require?
+* **Module imports.**
+Do you have a preferrerd ordering/grouping?
+Can multiple unrelated imports be on the same line or no?
+
+The more you care — and the more style items you care about — the more important it will be to use a linter to enforce them.
+Manual review of code style is bound to miss certain things.
+Plus, it's a waste of time to have two people go back and forth resolving style issues when the submitter could just run the lint command locally before pushing.
+If your linter supports it, a config file in your repository that has your exact style preferences (including what to ignore) defined will make life easier for everyone.
+
 === Repo meta setup
 
 ==== Tags

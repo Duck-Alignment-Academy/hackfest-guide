@@ -160,8 +160,19 @@ This doesn't mean you have to write paragraphs explaining how to use the test su
 
 ==== Plan your roadmap
 
-==== Open issues
+Do you know what's next for your project?
+Your new contributors won't unless you write it down.
+Creating a project roadmap helps people know what you would like them to work on.
+Of course, they may come with their own ideas, too.
+But having a documented "we want this" makes it clear that the work is in scope for the project.
 
+The roadmap doesn't have to be fancy.
+You can just open issues for the things you'd like to see done.
+This way you can record any details about design, acceptance criteria, and so on.
+Don't limit your self to features, either.
+Open issues for known bugs and meta work (like documentation, testing, etc), too.
+
+If your motivation for participating in the event includes getting work done on features or bugfixes and you haven't set a roadmap of some kind, you're setting yourself up for disappointment.
 
 ==== Set code style requirements
 

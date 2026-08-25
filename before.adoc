@@ -121,9 +121,22 @@ Once you've developed an AI policy, you should put the bits that you want AI too
 This has become a quasi-standard way of providing AI-specific instructions.
 Of course, there's no guarantee that the model will follow it.
 
-
 ==== Security policy
 
+Speaking of things that are necessary these days, you'll also want to have a security policy.
+This primarily covers how you want people to report security issues and how you'll handle those reports.
+To be clear: you are under no obligation to handle security reports in any way except the way you want to.
+
+A common approach is to have a private mechanism for reports — often an email address or a privuate issue (if your platform supports it).
+This keeps the details under wraps so that you have time to fix it.
+Your policy should indicate how quickly you'll respond to security issues.
+This doesn't necessarily mean how quickly you'll _fix_ the issue, just how long the reporter should wait for acknowledgement.
+
+Often, researchers will set a date on which they'll disclose the vulnerability to coincide with the release of your patch, a process known as "coordinated disclosure."
+Of course, some projects also choose to treat vulnerability reports the same as any other bug because the overhead of coordinated disclosure is too great a burden for them.
+
+Your policy should also make clear what version(s) you'll accept security reports for.
+Once you have all of this together, you should put it in a `SECURITY.md` file in the root of your repo.
 
 === Codebase setup
 

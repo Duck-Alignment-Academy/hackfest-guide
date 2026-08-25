@@ -140,15 +140,32 @@ Once you have all of this together, you should put it in a `SECURITY.md` file in
 
 === Codebase setup
 
+Of course, getting your code ready is an important step in preparing for an influx of newcomers.
+
+==== Audit your docs
+
+A good starting point is to walk through your docs and make sure they're still accurate.
+Do the instructions for building the project and running your test suite still work?
+Are all of the requirements listed?
+If not, your new contributors are going to have a rough time.
+
+The best way to test your documentation is to have someone who is unfamiliar with your project attempt to clone, build, and test your code.
+Any place they struggle is a bug in your docs.
+If you can't find a friend to test your docs, you can follow your instructions on a fresh virtual machine.
+The odds are decent that you'll find some required tool or library that's not included in your docs.
+
+When updating your docs to address any gaps you found, bear in mind that your reader will know a lot less about your project than you do.
+It's better to over-explain than under-explain.
+This doesn't mean you have to write paragraphs explaining how to use the test suite— a simple link to official docs will do — but it's better to give example commands than to just say something like "run the tests".
+
 ==== Plan your roadmap
 
 ==== Open issues
 
-==== Improve your docs
 
 ==== Set code style requirements
 
-=== Repo setup
+=== Repo meta setup
 
 ==== Tags
 

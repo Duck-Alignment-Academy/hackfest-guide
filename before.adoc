@@ -158,6 +158,12 @@ When updating your docs to address any gaps you found, bear in mind that your re
 It's better to over-explain than under-explain.
 This doesn't mean you have to write paragraphs explaining how to use the test suite— a simple link to official docs will do — but it's better to give example commands than to just say something like "run the tests".
 
+Don't overlook the importance of your `README` file.
+Depending on the event, many of the people who stop by your project may be entirely unfamiliar with it.
+The `README` will be what tells them if this is a project they are interested in contributing to.
+Your `README` should, at a minimum, clearly explain what the project does and for whom.
+It should contain instructions (or links to instructions) for building, testing, and using the software as well as contributing guides and all of the other stuff you're reading about in this guide.
+
 ==== Plan your roadmap
 
 Do you know what's next for your project?

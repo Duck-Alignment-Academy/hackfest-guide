@@ -89,6 +89,10 @@ Who reviews contributions?
 What do they check for?
 What automated tests (if any) must pass before a contribution can be accepted?
 What should the submitter do if they don't get a response (and how long should they wait)?
+* **Issue tag usage.**
+What tags do you use in your repo (see further discussion in <<_tags_types>> below)?
+When should they be applied and by whom?
+What does it mean if you encounter a specific tag?
 
 If it's not in a separate `GOVERNANCE.md` document, your contribution policy may also include a list of roles in the project, their responsibilities and privileges, and how people move up that ladder.
 This isn't strictly necessary for new hackfest contributors, but it will be come relevant if some of them stick around for the longer term.
@@ -229,7 +233,69 @@ If your linter supports it, a config file in your repository that has your exact
 
 === Repo meta setup
 
-==== Tags
+Setting up the repository is just as important as setting up the repository's _contents_.
+You'll be spending most of your time during the event in meta work, so it's to your benefit to get this sorted ahead of time.
+
+==== Tags & types
+
+Issue tags and types are the two best ways to keep your issue list organized.
+_Types_ are typically something like "bug", "feature", "docs" — high-level categories that indicate the type of work an issue represents.
+_Tags_ (or _labels_) are descriptors.
+They can indicate a component ("frontend", "backend"), work status ("needs review", "help wanted", "blocked"), or just about anything else.
+Issues can typically only have one type but can have any number of tags.
+
+Here are some tags you may want to have:
+
+* **good first issue**.
+Assign this tag to well-defined and narrowly-scoped issues that are approachable for people new to the project.
+As discussed in <<AI Policy>> above, you may want to explicitly bar AI agents and experienced contributors from working on these.
+* **maintainers only**.
+On the opposite end of the spectrum, you may want to reserve some issues for maintainers because they require deep knowledge of the existing code.
+You don't want someone to spend time working on an issue if you know you're not likely to accept their work.
+* **need info**.
+This is a helpful status tag to use if your tracker doesn't explicitly have a way to indicate you're waiting for more information from someone.
+You'll most likely use this if you're waiting for the person who reported the issue to respond with more details.
+* **blocked**.
+This status tag indicates that you are waiting for something.
+It may be another issue needs to be resolved first or there's a fix upstream that needs to land.
+Whatever the reason, work cannot progress on this issue.
+* **triage needed**,
+If your issue tracker supports adding tags by default when an issue is opened, have it apply this one.
+This is an indication that someone from the project needs to triage the issue —
+to verify that it's valid, that appropriate tags are assigned, and so on.
+If you can't add it automatically, you can do the inverse and add a _triaged_ label after an issue has been triaged.
+It's probably not helpful to use both.
+* **design needed**.
+Use this tag to indicate that something about the issue needs to be designed.
+In other words, it's probably not ready for someone to pick up and start working on yet.
+* **docs**.
+This tag indicates an issue is related to documentation.
+Often, people who can't make code contributions can help improve your documentation.
+This is, for example, how I got started in open source.
+Using the _docs_ tag helps make it easy to find these opportunities.
+* **graphics**.
+Similarly, you might need work done on a logo, sticker pack, or other graphical element.
+This is a specialized skill that's underrepresented in most open source communities.
+* **translation** and **internationalization**.
+Many projects default to US English.
+If yours supports more than that, you may have issues specific to translating strings to other languages or internationalizing interfaces.
+* **(event-specific tag)**.
+The event you're participating in may require a specific tag for each issue.
+Alternatively, you might want participants to only work on a designated subset of issues.
+* **(OS- or architecture-specific tags)**.
+If you support multiple operating systems or hardware architectures, there's a good chance you'll end up with issues that are specific to one of them.
+Using these tags help make those issues findable.
+* **(component tags)**.
+If your project has multiple components in the same issue tracker, use component-specific tags to categorize the issues.
+* **(language tags)**.
+If your project has multiple programming languages, a language-specific tag can help people find issues related to the languages they know.
+
+You may have other tags, of course.
+_blog_, _infrastructure_, and _website_ are all tags I've seen used commonly.
+They may be less valuable for hackfests, so I don't go into detail here.
+If you think I should {url-repo}[let me know] and I may add them to a future version.
+
+Well-configured and consistently-used tags are valuable not just for navigating the present state, but also for analyzing historical data about your project.
 
 ==== CI workflows
 

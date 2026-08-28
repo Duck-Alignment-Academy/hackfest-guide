@@ -299,9 +299,60 @@ Well-configured and consistently-used tags are valuable not just for navigating 
 
 ==== CI workflows
 
+Nothing will save you time like having a good CI suite.
+If you only review pull requests where the CI jobs pass, you'll avoid a lot of wasted effort.
+
+What should you put in your CI workflows?
+A build step, to make sure it builds correctly.
+Unit tests, if you have them.
+This will help make sure individual parts of your code behave as expected and will help avoid introducing regressions.
+If you have a larger project, adding integration tests to make sure all of the pieces work together may be a good idea, too.
+You should also use this as a way to enforce policy:
+DCO signoffs, code style, and so on.
+If the evaluation can be automated, make a check for it.
+
+There are a few tradeoffs for CI workflows, though.
+The first is that the longer workflows take to run, the longer the feedback loop will get (and the more your usage costs will be, if you pay them).
+If people have to wait an hour every time they push a commit, that's an unpleasant experience.
+Integration tests, especially once that depend on external services, can be flaky.
+Test failures that aren't actually failures are also an unpleasant experience.
+
+CI workflows are also a bit of a https://duckalignment.academy/a-trust-paradox/[catch-22 from a security perspective].
+On the one hand, they help you catch security issues before they're merged into your code.
+On the other hand, they can be an attack vector.
+You must make sure your CI jobs are securely configured.
+Tools like https://zizmor.sh/[zizmor] can identify and resolve insecure configurations.
+You may also want to require that a maintainer manually approve workflows before running against pull requests from untrusted sources.
+This, of course, puts you into a position where you now have to at least give a cursory review to make sure the change is safe enough for your CI workflow.
+But that’s less work than a detailed review.
+
 ==== Security settings
 
-==== Issue templates
+It's best to start securing your repo before you draw attention to it.
+Modern code forges are generally well-maintained with reasonable security settings, but there are a few things you should make sure of.
+Perhaps the most important thing you can do is to turn on multi-factor authentication if your code forge doesn't already require it.
+If you publish to an ecosystem repository like PyPI or npm, use https://repos.openssf.org/trusted-publishers-for-all-package-repositories[Trusted Publishers].
+Now is also a good time to make sure you've disabled any unneeded API keys and that the ones you still need are scoped as limitedly as possible.
+These steps will help ensure your account and publishing flow stay under your control.
+
+In addition, there are other steps you can take to improve your overall security posture.
+GitHub has a list of https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/[six security settings every maintainer should enable].
+The https://baseline.openssf.org[Open Source Project Security (OSPS) Baseline] from the OpenSSF has an excellent maintainer-focused set of security controls to implement based on the size and maturity of your project.
+
+==== Issue and pull request templates
+
+Issue and pull requests templates are essentially a polite suggestion for how you want the description to look.
+People will sometimes ignore them or edit the result beyond recognition.
+Still, they are helpful to newcomers and experience contributors alike.
+
+At a minimum, I suggest having templates for feature requests and bug reports.
+For each, you can include the information you want people to tell you so that you (hopefully) don't have to go back and ask them.
+The bug report template may include basic troubleshooting steps that you want people to run before they hit the submit button.
+A pull request template may include a checklist of things that need to be verified — tests added, database migrations included, docs changes, et cetera.
+
+Plus, you can have the appropriate <<_tags_types, tags and types>> auto-applied.
+The catch is that issues and pull requests opened through an API call instead of the web interface may not use one of the provided templates (that is, to the best of my knowledge, true on GitHub as of this writing).
+In that case, the lack of a particular tag can be a signal to auto-close for not following the appropriate policy.
 
 === Community setup
 

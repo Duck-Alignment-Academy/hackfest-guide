@@ -1,0 +1,403 @@
+
+== Before the event
+
+A successful hackfest starts with preparing ahead of time.
+Getting your project organized ahead of time means you can spend the event focusing on guiding your contributors.
+
+=== Policy setup
+
+In general, the smaller your project, the less policy structure you need.
+But a non-zero sized project requires a non-zero sized set of policies.
+(Note that I'm assuming you already have a license.
+If not, you are way too far ahead of yourself.)
+
+You policies don't need to be complicated.
+For a small project, a sentence or two may be sufficient in some areas.
+The goal is to clearly communicate the project's way of working, both as instruction to newcomers and a reminder to experience contributors.
+
+==== Code of conduct
+
+This is one area where I advocate for having a well-defined policy https://duckalignment.academy/code-conduct-enforcement-planning/[ahead of time].
+You don't want to be building your code of conduct — particularly the enforcement mechanism — on the fly.
+That leads to inconsistent decisions and a process that at least _seems_ unfair.
+Both of these can be very harmful to community cohesion.
+
+The point of a code of conduct is to give a https://duckalignment.academy/define-good-behavior/[shared definition of "good" behavior] in human-to-human interactions.
+Most people will want to follow the rules of a community.
+It’s how community works.
+But you can’t rely on everyone having the same unspoken expectations.
+Think of it this way:
+having rules and policies for behavior in your community is like documenting the community’s API.
+
+In general, I suggest copying an established code of conduct for your community.
+The https://www.contributor-covenant.org/[Contributor Covenant] is a flexible, widely-adopted code of conduct.
+If you do decide to write your own, include:
+
+* what behaviors you want to encourage and prohibit
+* where the policy applies
+* how reports are submitted
+* who enforces the code of conduct
+* what consequences exist for violations
+
+Remember that the point of enforcement is not to be punitive, but to encourage pro-community behavior.
+Also bear in mind that for larger communities, enforcement can be a significant emotional burden on those tasked with it.
+
+Ultimately, you can set whatever code of conduct you want for your project.
+Enforce it consistently, and you'll get the kind of behavior the code defines as good.
+
+==== Contribution policy
+
+Your project's contribution policy defines the process for submitting a quality contribution and your project's definition of _quality_.
+Calling it a "policy" is, perhaps, too strong of a term for most projects.
+It tends to be more of a "best practices" document for all but the largest projects where strict policy enforcement becomes necessary.
+
+Although there's no agreed upon standard for a contribution policy, a search of your favorite git forge for "CONTRIBUTING.md" will turn up roughtly eleventy billion examples that you can use as inspiration.
+Some things to consider for your contribution policy:
+
+* **Scope.**
+Your project won't do everything.
+Where are the boundaries for the kinds of contributions you'll accept?
+Do you care about typo fixes that don't affect the meaning of docs or websites?
+Will you accept new features that aren't already on your roadmap?
+What hardware and operating systems do you care to support?
+The most technically-brilliant contribution is of no use if it's not something you're willing to accept.
+This is an important line to draw because otherwise you will end up stuck supporting something that you have no ability or desire to maintain.
+* **Issue creation requirements.**
+Does your project require https://duckalignment.academy/adding-pre-report-bug-discussion/[discussion before creating an issue] for a bug report or feature?
+Must bug reports be accompanied by a reproducer?
+Do bug reports have to be tested against the latest release or the latest commit?
+* **Pull request creation requirements.**
+Does a pull request need to have an associated issue first?
+Does the issue need to be assigned first?
+* **Code style requirements.**
+What sort of formatting and syntax requirements do you have?
+Tabs or spaces?
+Fixed-width prose, sentence-per-line, or https://sembr.org/[semantic line breaks]?
+* **Testing requirements.**
+Do new features have to have tests?
+What about changes to un-tested parts of the code base: does a fix there require the addition of a test?
+How comprehensive must tests be?
+* **Legal-adjacent requirements.**
+Does your project require all commits to carry a https://developercertificate.org/[developer certificate of origin] (DCO) signoff?
+If not, you'll want to explicitly indicate that contributions are accepted under the project's license ("inbound equals outbound").
+* **Branching process.**
+What branch should a contribution target?
+In other words, is everything against `main` or do you keep release or feature branches separate long-term?
+If you maintain multiple branches, how does a would-be contributor know which one to target?
+* **Review process.**
+Who reviews contributions?
+What do they check for?
+What automated tests (if any) must pass before a contribution can be accepted?
+What should the submitter do if they don't get a response (and how long should they wait)?
+* **Issue tag usage.**
+What tags do you use in your repo (see further discussion in <<_tags_types>> below)?
+When should they be applied and by whom?
+What does it mean if you encounter a specific tag?
+
+If it's not in a separate `GOVERNANCE.md` document, your contribution policy may also include a list of roles in the project, their responsibilities and privileges, and how people move up that ladder.
+This isn't strictly necessary for new hackfest contributors, but it will be come relevant if some of them stick around for the longer term.
+
+==== AI Policy
+
+However you feel about AI, it's being used a lot these days.
+If you have a strong opinion, you'll need a policy.
+If you haven't given it much thought yet, now's the time.
+Even if you haven't had to deal with AI contributions yet, it's almost certain that you will once you participate in a hackfest.
+I maintain a https://duckalignment.academy/resources/ai-policy-resources/[list of AI policies] used by various projects that you can use as a starting point for creating your own.
+
+Your policy can fall anywhere on a spectrum from "complete and total ban" to "I do not care".
+I find Daniel Miessler's https://danielmiessler.com/blog/ai-influence-level-ail[AI Influence Level] (AIL) system to be a good conceptual framework.
+You can pick the highest number you're willing to accept and use that as a starting point for creating your policy.
+
+A "no AI usage at all" policy doesn't have to be very complicated.
+if you allow some amount of AI usage, then you'll want to consider if and how you want it disclosed.
+Some projects, like the Linux kernel, have a https://docs.kernel.org/process/coding-assistants.html#attribution[defined attribution style] to follow.
+On the other hand, Kubernetes https://www.kubernetes.dev/docs/guide/pull-requests/#ai-guidance[expressly forbids] commit message trailers to prevent unscrupulous vendors from using that for marketing.
+
+In addition to use and disclosure rules, there's one more thing you'll want to consider:
+can AI be used on "good first issues"…issues?
+More specifically, perhaps, can autonomous AI agents contribute to those issues?
+This may be something you want to special-case for a hackfest, depending on the reasons for participation that you came up with.
+If you're participating in the event with a primary purpose of helping new contributors get experience in open source software, then letting AI agents grab the "good first issue" issues defeats the purpose.
+Personally, I think anything that you took the time to mark as a good first issue should be left for the newcomer humans to work on.
+
+Once you've developed an AI policy, you should put the bits that you want AI tools to know about in an https://agents.md/[AGENTS.md file].
+This has become a quasi-standard way of providing AI-specific instructions.
+Of course, there's no guarantee that the model will follow it.
+
+==== Security policy
+
+Speaking of things that are necessary these days, you'll also want to have a security policy.
+This primarily covers how you want people to report security issues and how you'll handle those reports.
+To be clear: you are under no obligation to handle security reports in any way except the way you want to.
+
+A common approach is to have a private mechanism for reports — often an email address or a privuate issue (if your platform supports it).
+This keeps the details under wraps so that you have time to fix it.
+Your policy should indicate how quickly you'll respond to security issues.
+This doesn't necessarily mean how quickly you'll _fix_ the issue, just how long the reporter should wait for acknowledgement.
+
+Often, researchers will set a date on which they'll disclose the vulnerability to coincide with the release of your patch, a process known as "coordinated disclosure."
+Of course, some projects also choose to treat vulnerability reports the same as any other bug because the overhead of coordinated disclosure is too great a burden for them.
+
+Your policy should also make clear what version(s) you'll accept security reports for.
+Once you have all of this together, you should put it in a `SECURITY.md` file in the root of your repo.
+
+=== Codebase setup
+
+Of course, getting your code ready is an important step in preparing for an influx of newcomers.
+
+==== Audit your docs
+
+A good starting point is to walk through your docs and make sure they're still accurate.
+Do the instructions for building the project and running your test suite still work?
+Are all of the requirements listed?
+If not, your new contributors are going to have a rough time.
+
+The best way to test your documentation is to have someone who is unfamiliar with your project attempt to clone, build, and test your code.
+Any place they struggle is a bug in your docs.
+If you can't find a friend to test your docs, you can follow your instructions on a fresh virtual machine.
+The odds are decent that you'll find some required tool or library that's not included in your docs.
+
+When updating your docs to address any gaps you found, bear in mind that your reader will know a lot less about your project than you do.
+It's better to over-explain than under-explain.
+This doesn't mean you have to write paragraphs explaining how to use the test suite— a simple link to official docs will do — but it's better to give example commands than to just say something like "run the tests".
+
+Don't overlook the importance of your `README` file.
+Depending on the event, many of the people who stop by your project may be entirely unfamiliar with it.
+The `README` will be what tells them if this is a project they are interested in contributing to.
+Your `README` should, at a minimum, clearly explain what the project does and for whom.
+It should contain instructions (or links to instructions) for building, testing, and using the software as well as contributing guides and all of the other stuff you're reading about in this guide.
+
+==== Plan your roadmap
+
+Do you know what's next for your project?
+Your new contributors won't unless you write it down.
+Creating a project roadmap helps people know what you would like them to work on.
+Of course, they may come with their own ideas, too.
+But having a documented "we want this" makes it clear that the work is in scope for the project.
+
+The roadmap doesn't have to be fancy.
+You can just open issues for the things you'd like to see done.
+This way you can record any details about design, acceptance criteria, and so on.
+Don't limit your self to features, either.
+Open issues for known bugs and meta work (like documentation, testing, etc), too.
+
+If your motivation for participating in the event includes getting work done on features or bugfixes and you haven't set a roadmap of some kind, you're setting yourself up for disappointment.
+
+==== Set code style requirements
+
+I briefly mentioned code style requirements in the "Contribution policy" section above.
+Now let's talk about this in a little more detail.
+The purpose of a style guide is to keep the code looking consistent.
+This is less for visual appeal than it is for avoiding confusion.
+When all of your functions and varible names have the same style, you can focus your understanding on the code itself.
+
+You don't _need_ to have a code style guide if your project is small and you truly do not care.
+The point of a style guide isn't to establish the One True Way™ that everyone must write code, it's to establish a common practice.
+As your project grows in complexity and/or your community grows in size, your style guide will need to grow with it.
+https://google.github.io/styleguide/[Google's style guides] are lengthy and well-organized.
+You don't need to go to that level.
+
+Here's what you may want to include in your style guide:
+
+* **Variable and function name styles.**
+Are you a `camelCase` person or do you prefer `snake_case` or `kebab-case`?
+Do you want constants in all caps?
+Do you want variables to be nouns and functions to be verby in name?
+* **Tabs or spaces (and how many).**
+No, seriously.
+* **Bracket positions.**
+Do they belong on the same line?
+If they're on a different line, where do you indent them to?
+* **Line length.**
+Are you still rocking an 80-character terminal?
+* **Docmentation requirements.**
+How much documentation needs to be in the code?
+What should it look like?
+* **Language-specific features to use (or avoid).**
+For example, are global variables acceptable always, sometimes, or never?
+* **Error handling process.**
+How strict do you want to be about catching errors?
+How do you want those errors presented to the user?
+* **File naming.**
+How should new files be arranged in the repo?
+What sort of naming style do you require?
+* **Module imports.**
+Do you have a preferrerd ordering/grouping?
+Can multiple unrelated imports be on the same line or no?
+
+The more you care — and the more style items you care about — the more important it will be to use a linter to enforce them.
+Manual review of code style is bound to miss certain things.
+Plus, it's a waste of time to have two people go back and forth resolving style issues when the submitter could just run the lint command locally before pushing.
+If your linter supports it, a config file in your repository that has your exact style preferences (including what to ignore) defined will make life easier for everyone.
+
+=== Repo meta setup
+
+Setting up the repository is just as important as setting up the repository's _contents_.
+You'll be spending most of your time during the event in meta work, so it's to your benefit to get this sorted ahead of time.
+
+==== Tags & types
+
+Issue tags and types are the two best ways to keep your issue list organized.
+_Types_ are typically something like "bug", "feature", "docs" — high-level categories that indicate the type of work an issue represents.
+_Tags_ (or _labels_) are descriptors.
+They can indicate a component ("frontend", "backend"), work status ("needs review", "help wanted", "blocked"), or just about anything else.
+Issues can typically only have one type but can have any number of tags.
+
+Here are some tags you may want to have:
+
+* **good first issue**.
+Assign this tag to well-defined and narrowly-scoped issues that are approachable for people new to the project.
+As discussed in <<AI Policy>> above, you may want to explicitly bar AI agents and experienced contributors from working on these.
+* **maintainers only**.
+On the opposite end of the spectrum, you may want to reserve some issues for maintainers because they require deep knowledge of the existing code.
+You don't want someone to spend time working on an issue if you know you're not likely to accept their work.
+* **need info**.
+This is a helpful status tag to use if your tracker doesn't explicitly have a way to indicate you're waiting for more information from someone.
+You'll most likely use this if you're waiting for the person who reported the issue to respond with more details.
+* **blocked**.
+This status tag indicates that you are waiting for something.
+It may be another issue needs to be resolved first or there's a fix upstream that needs to land.
+Whatever the reason, work cannot progress on this issue.
+* **triage needed**,
+If your issue tracker supports adding tags by default when an issue is opened, have it apply this one.
+This is an indication that someone from the project needs to triage the issue —
+to verify that it's valid, that appropriate tags are assigned, and so on.
+If you can't add it automatically, you can do the inverse and add a _triaged_ label after an issue has been triaged.
+It's probably not helpful to use both.
+* **design needed**.
+Use this tag to indicate that something about the issue needs to be designed.
+In other words, it's probably not ready for someone to pick up and start working on yet.
+* **docs**.
+This tag indicates an issue is related to documentation.
+Often, people who can't make code contributions can help improve your documentation.
+This is, for example, how I got started in open source.
+Using the _docs_ tag helps make it easy to find these opportunities.
+* **graphics**.
+Similarly, you might need work done on a logo, sticker pack, or other graphical element.
+This is a specialized skill that's underrepresented in most open source communities.
+* **translation** and **internationalization**.
+Many projects default to US English.
+If yours supports more than that, you may have issues specific to translating strings to other languages or internationalizing interfaces.
+* **(event-specific tag)**.
+The event you're participating in may require a specific tag for each issue.
+Alternatively, you might want participants to only work on a designated subset of issues.
+* **(OS- or architecture-specific tags)**.
+If you support multiple operating systems or hardware architectures, there's a good chance you'll end up with issues that are specific to one of them.
+Using these tags help make those issues findable.
+* **(component tags)**.
+If your project has multiple components in the same issue tracker, use component-specific tags to categorize the issues.
+* **(language tags)**.
+If your project has multiple programming languages, a language-specific tag can help people find issues related to the languages they know.
+
+You may have other tags, of course.
+_blog_, _infrastructure_, and _website_ are all tags I've seen used commonly.
+They may be less valuable for hackfests, so I don't go into detail here.
+If you think I should {url-repo}[let me know] and I may add them to a future version.
+
+Well-configured and consistently-used tags are valuable not just for navigating the present state, but also for analyzing historical data about your project.
+
+==== CI workflows
+
+Nothing will save you time like having a good CI suite.
+If you only review pull requests where the CI jobs pass, you'll avoid a lot of wasted effort.
+
+What should you put in your CI workflows?
+A build step, to make sure it builds correctly.
+Unit tests, if you have them.
+This will help make sure individual parts of your code behave as expected and will help avoid introducing regressions.
+If you have a larger project, adding integration tests to make sure all of the pieces work together may be a good idea, too.
+You should also use this as a way to enforce policy:
+DCO signoffs, code style, and so on.
+If the evaluation can be automated, make a check for it.
+
+There are a few tradeoffs for CI workflows, though.
+The first is that the longer workflows take to run, the longer the feedback loop will get (and the more your usage costs will be, if you pay them).
+If people have to wait an hour every time they push a commit, that's an unpleasant experience.
+Integration tests, especially once that depend on external services, can be flaky.
+Test failures that aren't actually failures are also an unpleasant experience.
+
+CI workflows are also a bit of a https://duckalignment.academy/a-trust-paradox/[catch-22 from a security perspective].
+On the one hand, they help you catch security issues before they're merged into your code.
+On the other hand, they can be an attack vector.
+You must make sure your CI jobs are securely configured.
+Tools like https://zizmor.sh/[zizmor] can identify and resolve insecure configurations.
+You may also want to require that a maintainer manually approve workflows before running against pull requests from untrusted sources.
+This, of course, puts you into a position where you now have to at least give a cursory review to make sure the change is safe enough for your CI workflow.
+But that’s less work than a detailed review.
+
+==== Security settings
+
+It's best to start securing your repo before you draw attention to it.
+Modern code forges are generally well-maintained with reasonable security settings, but there are a few things you should make sure of.
+Perhaps the most important thing you can do is to turn on multi-factor authentication if your code forge doesn't already require it.
+If you publish to an ecosystem repository like PyPI or npm, use https://repos.openssf.org/trusted-publishers-for-all-package-repositories[Trusted Publishers].
+Now is also a good time to make sure you've disabled any unneeded API keys and that the ones you still need are scoped as limitedly as possible.
+These steps will help ensure your account and publishing flow stay under your control.
+
+In addition, there are other steps you can take to improve your overall security posture.
+GitHub has a list of https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/[six security settings every maintainer should enable].
+The https://baseline.openssf.org[Open Source Project Security (OSPS) Baseline] from the OpenSSF has an excellent maintainer-focused set of security controls to implement based on the size and maturity of your project.
+
+==== Issue and pull request templates
+
+Issue and pull requests templates are essentially a polite suggestion for how you want the description to look.
+People will sometimes ignore them or edit the result beyond recognition.
+Still, they are helpful to newcomers and experience contributors alike.
+
+At a minimum, I suggest having templates for feature requests and bug reports.
+For each, you can include the information you want people to tell you so that you (hopefully) don't have to go back and ask them.
+The bug report template may include basic troubleshooting steps that you want people to run before they hit the submit button.
+A pull request template may include a checklist of things that need to be verified — tests added, database migrations included, docs changes, et cetera.
+
+Plus, you can have the appropriate <<_tags_types, tags and types>> auto-applied.
+The catch is that issues and pull requests opened through an API call instead of the web interface may not use one of the provided templates (that is, to the best of my knowledge, true on GitHub as of this writing).
+In that case, the lack of a particular tag can be a signal to auto-close for not following the appropriate policy.
+
+=== Community setup
+
+Another thing you'll want to get set up is your community infrastructure.
+Don't get too wrapped up in the word "infrastructure" —
+it doesn't have to be anything big.
+Really, it comes down to two questions.
+
+==== How will people communicate?
+
+If you're drawing in new people, they will eventually have questions.
+They may also want to share ideas or tips with others.
+How will they do that?
+Is there a mailing list?
+A chat platform?
+A forum?
+Or does everything happen in issues.
+
+If you can, I'd avoid the "everything happens in issues" option.
+It's not the worst thing that can happen, but it mixes conversation in with issues, which can make it harder to deal with both of them.
+If you're on GitHub, you can enable https://github.com/features/discussions[discussions], which helps keep conversation separate from development.
+You can also convert issues to discussions or create issues from discussions, which makes moderation easier.
+
+Whatever route you end up taking, make sure it's clear where people can go to talk to you or each other.
+
+==== Can anyone help you?
+
+Do you have any friends?
+That came out meaner than I meant for it to.
+What I mean is: do you have any friends that can help?
+Having a few other maintainers who can share the load will make the experience much better for you.
+Even if you're the one setting the direction, they can answer questions, provide feedback, and so on.
+If you have some long-time contributors, now might be a good time to offer them a promotion.
+If not, see if you can find someone who will help out just for the duration of the event.
+
+=== Gifts?
+
+The last thing to consider in the time leading up to the hackfest is if you want to give out any gifts.
+This is separate from any gifts that the event organizers (assume you're not organizing the event) give out.
+Some projects like to give out stickers, t-shirts, and other small items.
+
+Honestly, I would avoid this.
+There's a good chance that many of your new contributors will live in a country other than the one you live in.
+That means you'll have to pay international shipping rates, and deal with all of the vagaraties of customs rules.
+Some deliveries may take months to reach the recipient and in the meantime you may get tired of answering "do you know where my package is?" emails.
+
+If you have swag to give away, you'll need to decide what activities will earn what items.
+Set up some kind of form ahead of time to capture shipping addresses and contact information so that you can send the link out right away.

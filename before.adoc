@@ -356,8 +356,48 @@ In that case, the lack of a particular tag can be a signal to auto-close for not
 
 === Community setup
 
+Another thing you'll want to get set up is your community infrastructure.
+Don't get too wrapped up in the word "infrastructure" —
+it doesn't have to be anything big.
+Really, it comes down to two questions.
+
 ==== How will people communicate?
+
+If you're drawing in new people, they will eventually have questions.
+They may also want to share ideas or tips with others.
+How will they do that?
+Is there a mailing list?
+A chat platform?
+A forum?
+Or does everything happen in issues.
+
+If you can, I'd avoid the "everything happens in issues" option.
+It's not the worst thing that can happen, but it mixes conversation in with issues, which can make it harder to deal with both of them.
+If you're on GitHub, you can enable https://github.com/features/discussions[discussions], which helps keep conversation separate from development.
+You can also convert issues to discussions or create issues from discussions, which makes moderation easier.
+
+Whatever route you end up taking, make sure it's clear where people can go to talk to you or each other.
 
 ==== Can anyone help you?
 
+Do you have any friends?
+That came out meaner than I meant for it to.
+What I mean is: do you have any friends that can help?
+Having a few other maintainers who can share the load will make the experience much better for you.
+Even if you're the one setting the direction, they can answer questions, provide feedback, and so on.
+If you have some long-time contributors, now might be a good time to offer them a promotion.
+If not, see if you can find someone who will help out just for the duration of the event.
+
 === Gifts?
+
+The last thing to consider in the time leading up to the hackfest is if you want to give out any gifts.
+This is separate from any gifts that the event organizers (assume you're not organizing the event) give out.
+Some projects like to give out stickers, t-shirts, and other small items.
+
+Honestly, I would avoid this.
+There's a good chance that many of your new contributors will live in a country other than the one you live in.
+That means you'll have to pay international shipping rates, and deal with all of the vagaraties of customs rules.
+Some deliveries may take months to reach the recipient and in the meantime you may get tired of answering "do you know where my package is?" emails.
+
+If you have swag to give away, you'll need to decide what activities will earn what items.
+Set up some kind of form ahead of time to capture shipping addresses and contact information so that you can send the link out right away.

@@ -1,0 +1,38 @@
+
+== After the event
+
+It's done!
+Take a deep breath.
+You made it.
+There are just a few things left for you to do to wrap it all up.
+
+=== File your paperwork and sweep the floor
+
+There may be a few administrative tasks that you need to do:
+label unmerged pull requests as "approved", label spammy pull requests as "spam", submit some kind of numbers to the organizers of the event.
+In most cases, there won't be much of this and you can knock it out pretty quickly.
+
+Then there's the cleanup.
+If there are abandoned pull requests, close them.
+(Keep the open issues, though.)
+Remove assignees from issues if the person seems to have disappeared on you.
+
+=== Invite new contributors
+
+If some people have shown a desire to stick around — and you feel like their work is of sufficient quality — invite them to join the project.
+You don't have to (and probably shouldn't) give them keys to the kingdom right away.
+But invite them to join as a triager, pull request reviewer, or some other entry point into your contributor ladder.
+They may be your answer to "<<_can_anyone_help_you>>" the next time around.
+
+=== Write a report
+
+What did you learn from participating in this event?
+What went well for your project?
+What was unpleasant?
+Write this stuff down.
+Share it with others.
+The more we share our knowledge and experiences, the better off we'll all be.
+Plus, this gives you the opportunity to think about if you met your definition of "<<_what_does_success_look_like, success>>" so you can decide if you want to participate the next time.
+
+If you found this guide helpful, tell your friends.
+If you have suggestions for improvement, please {url-repo}[let me know].

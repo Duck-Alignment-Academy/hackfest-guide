@@ -1,0 +1,93 @@
+
+== During the event
+
+Woohoo!
+The hackfest has started.
+Now what?
+
+=== Stop writing code
+
+For the duration of the hackfest, you should stop writing code.
+There's a good chance that writing code is your favorite part of running your project.
+If that's the case, I'm sorry, but you really should stop.
+
+The first reason you should stop is the fact that every feature you implement or bug you fix is something that your new contributors can't do.
+You're going to have a hard time getting people to contribute if there's no work for them.
+It's far too common for a project's leader to take all of the oxygen out of the room by being _too_ responsive.
+
+The other — and more important — reason is that your role has shifted.
+The most important and impactful thing you can be doing over the course of the hackfest is to guide others.
+You need to be triaging new issues, reviewing pull requests, and otherwise providing providing the higher-level project leadership.
+
+=== Review early and often
+
+Since your primary role is now reviewer, you should be doing a lot of that.
+The quicker you can triage an issue or review a pull request, the better the experience for your newcomers will be.
+Nothing kills enthusiasm like having to wait long periods for feedback.
+Of course, this is not to say that you should spend every moment refreshing the code forge so that you can immediately jump on anything new that comes in.
+You should still live the rest of your life.
+
+For reviewing pull requests, do the easy parts first.
+Does the description sound like something you want to add?
+(This is where requiring an approved issue for all pull requests comes in handy.)
+Do the tests pass?
+If the answer to both is "yes," you can move a little deeper.
+Does it introduce new dependencies or change default behaviors?
+Both of those will merit a more detailed look.
+If you get this far, you can do the parts that potentially require more back-and-forth.
+These are the broader code design and style aspects.
+It may seem counterintuitive to start small and work your way to the big picture, but the idea here is to pass the "quick reject" gates so that you're not spending deep review time on a contribution that will never be acceptable.
+
+For issues, the process is a little simpler.
+Feel free to reject or mark for follow-up anything that is unclear or under-specified.
+If the issue is a feature request, is it one that you want to consider?
+If the issue is a bug report, is it reproducible?
+Is it actually a bug or intentional behavior?
+My talk https://duckalignment.academy/your-bug-tracker-and-you-scale/["Your Bug Tracker and You"] goes into much greater depth on how to triage bug reports.
+As you determine, for whatever reason, that an issue is not suitable, https://duckalignment.academy/how-close-issues/[close it].
+
+=== Ban the bad actors
+
+The downside to drawing in new people to your project is that some of them will probably be unpleasant.
+You might get someone who is abusive when you reject their pull request.
+Spammers might open irrelevant issues full of links to their project or scam.
+Someone might submit AI slop that's irrelevant or wasteful of your time just so they can juice their stats.
+
+If the conduct merits it, block them from the repo and, if necessary, report their account to the event organizers or code hosting platform.
+The code of conduct you adopted before the event will be the guide for what level of response is appropriate.
+In general, I try to show grace to people who are well-intentioned but misguided.
+But if you're overwhelmed by a large volume of bad pull requests, it's reasonable to act swiftly and not give second chances.
+While it's important to be kind to others, it's also important to be kind to yourself.
+
+=== Update your docs
+
+All of those docs you wrote and updated before the event started?
+They're getting tested now.
+You'll almost certainly need to make updates as time goes on because people will find the gaps and confusing parts.
+I try to think of questions and misunderstandings as indicating bugs in the docs.
+Of course, sometimes people just don't read them.
+
+The other docs-like task that will come up is managing "canned replies".
+Many platforms offer some version of pre-set text that you can quickly select and put into an issue or pull request.
+This allows you to respond quickly, consistently, and in-depth without having to type the same thing over and over again.
+
+I left this section out of the "Before" part on purpose.
+You'll want to wait and see what sort of replies you actually send repeatedly before you go through the trouble of making them canned replies.
+If your platofrm does not support canned replies, you can keep them in a file for easy copy-paste.
+The cilium project has a https://github.com/cilium/cilium/tree/main/contrib/replies[good list] if you need some inspiration.
+
+=== Promote your project and contributors
+
+Here's the part that so many projects overlook:
+promotion.
+It's hard, I know.
+You want to let your work speak for itself and it feels uncomfortable to go out and brag about it.
+But brag you must.
+Whether it's on your personal social media accounts, forums, project accounts, whatever.
+Tell people about your project and about the people who are showing up to contribute.
+
+The first reason to do this is that https://duckalignment.academy/flywheel-theory-community-engagement/[activity begets activity].
+If people see your project come up and they see people contributing, that tells them that your project is a good place to contribute.
+Secondly, it's a nice reward for contributors to see themselves getting public praise.
+If you've ever watched an internet live stream and they say your name "on air." you'll know the feeling I'm talking about.
+Make people feel like valued members of the community and they'll feel like valued members of the community.

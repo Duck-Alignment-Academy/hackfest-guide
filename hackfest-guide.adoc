@@ -9,5 +9,6 @@ Ben Cotton <quack@duckalignment.academy>
 include::introduction.adoc[]
 include::before.adoc[]
 include::during.adoc[]
+include::after.adoc[]
 
 include::backmatter.adoc[]

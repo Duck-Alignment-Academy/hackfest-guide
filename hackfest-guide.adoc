@@ -7,9 +7,9 @@ Ben Cotton <quack@duckalignment.academy>
 :notitle:
 :url-repo: https://github.com/Duck-Alignment-Academy/hackfest-guide
 
-include::introduction.adoc[]
-include::before.adoc[]
-include::during.adoc[]
-include::after.adoc[]
+include::book/introduction.adoc[]
+include::book/before.adoc[]
+include::book/during.adoc[]
+include::book/after.adoc[]
 
-include::backmatter.adoc[]
+include::book/backmatter.adoc[]

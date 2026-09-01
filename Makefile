@@ -1,4 +1,12 @@
-all: pdf epub
+all: spellcheck pdf epub
+
+spellcheck:
+	@errors=$$(hunspell -d en_US -p project_words.txt -l book/*.adoc ) ; \
+	if [ -n "$$errors" ]; then \
+		echo "$$errors" ; \
+		exit 1 ; \
+	fi
+
 
 pdf:
 	asciidoctor-pdf -D output hackfest-guide.adoc

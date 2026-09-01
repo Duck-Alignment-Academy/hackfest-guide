@@ -34,6 +34,8 @@ You may insert line breaks after colons and semicolons.
 
 I include a [`Makefile`](Makefile) to make it easy to do local builds.
 Use `make pdf` to build the PDF version, `make epub` to build the epub version, and `make clean` to remove the built files.
+`make spellcheck` will run a spelling check.
+If the spellchecker flags words that it shouldn't, add them to `project_words.txt`.
 Output ends up in the `output/` directory.
 
 Building the project requires:
@@ -41,6 +43,8 @@ Building the project requires:
 * asciidoctor
 * asciidoctor-pdf
 * pandoc
+
+Running the spellchecker requires hunspell.
 
 ## Code of Conduct
 

@@ -55,9 +55,9 @@ The goal of having new contributors learn about open source was lost —
 you don't learn much if you're not even writing the code.
 
 In 2024, the GUAC project included a couple repos in Hacktoberfest.
-One of the open issues was writing a documentation page for an un-documented command.
+One of the open issues was writing a documentation page for an undocumented command.
 GUAC is a software supply chain knowledge graph, so you can imagine my dismay when someone opened a pull request that described a guacamole recipe manager.
-Events like Hacktoberfest have long atracted both the committed and the lazy, but generative AI gives the lazy an uncontrolled weapon.
+Events like Hacktoberfest have long attracted both the committed and the lazy, but generative AI gives the lazy an uncontrolled weapon.
 
 I'm not trying to scare you off.
 Hackfests can be a great experience for you and your project.
@@ -97,10 +97,10 @@ Keeping them is another.
 But contributors that stick around keep your project sustainable, so this might be a goal for you beyond a simple new contributor count.
 The downside is that you can't know if someone has stuck around for at least a few months.
 * **Valid pull requests opened.**
-Perhaps you're less concerned about the number of people versus the quanity of contributions.
+Perhaps you're less concerned about the number of people versus the quantity of contributions.
 Does it matter to you if one person opened four pull requests or if four people opened one apiece?
 * **Valid pull requests merged.**
-Or maybe you should only count it if the contirubtion actually lands.
+Or maybe you should only count it if the contribution actually lands.
 * **Bugs fixed.**
 Maybe your goal is fixing some of the backlog of bugs that you've been meaning to get to.
 * **Features implemented.**

@@ -51,7 +51,7 @@ Your project's contribution policy defines the process for submitting a quality 
 Calling it a "policy" is, perhaps, too strong of a term for most projects.
 It tends to be more of a "best practices" document for all but the largest projects where strict policy enforcement becomes necessary.
 
-Although there's no agreed upon standard for a contribution policy, a search of your favorite git forge for "CONTRIBUTING.md" will turn up roughtly eleventy billion examples that you can use as inspiration.
+Although there's no agreed upon standard for a contribution policy, a search of your favorite git forge for "CONTRIBUTING.md" will turn up roughly eleventy billion examples that you can use as inspiration.
 Some things to consider for your contribution policy:
 
 * **Scope.**
@@ -75,7 +75,7 @@ Tabs or spaces?
 Fixed-width prose, sentence-per-line, or https://sembr.org/[semantic line breaks]?
 * **Testing requirements.**
 Do new features have to have tests?
-What about changes to un-tested parts of the code base: does a fix there require the addition of a test?
+What about changes to untested parts of the code base: does a fix there require the addition of a test?
 How comprehensive must tests be?
 * **Legal-adjacent requirements.**
 Does your project require all commits to carry a https://developercertificate.org/[developer certificate of origin] (DCO) signoff?
@@ -101,7 +101,7 @@ This isn't strictly necessary for new hackfest contributors, but it will be come
 
 However you feel about AI, it's being used a lot these days.
 If you have a strong opinion, you'll need a policy.
-If you haven't given it much thought yet, now's the time.
+If you haven't given it much thought yet, now is the time.
 Even if you haven't had to deal with AI contributions yet, it's almost certain that you will once you participate in a hackfest.
 I maintain a https://duckalignment.academy/resources/ai-policy-resources/[list of AI policies] used by various projects that you can use as a starting point for creating your own.
 
@@ -131,10 +131,10 @@ Speaking of things that are necessary these days, you'll also want to have a sec
 This primarily covers how you want people to report security issues and how you'll handle those reports.
 To be clear: you are under no obligation to handle security reports in any way except the way you want to.
 
-A common approach is to have a private mechanism for reports — often an email address or a privuate issue (if your platform supports it).
+A common approach is to have a private mechanism for reports — often an email address or a private issue (if your platform supports it).
 This keeps the details under wraps so that you have time to fix it.
 Your policy should indicate how quickly you'll respond to security issues.
-This doesn't necessarily mean how quickly you'll _fix_ the issue, just how long the reporter should wait for acknowledgement.
+This doesn't necessarily mean how quickly you'll _fix_ the issue, just how long the reporter should wait for acknowledgment.
 
 Often, researchers will set a date on which they'll disclose the vulnerability to coincide with the release of your patch, a process known as "coordinated disclosure."
 Of course, some projects also choose to treat vulnerability reports the same as any other bug because the overhead of coordinated disclosure is too great a burden for them.
@@ -190,7 +190,7 @@ I briefly mentioned code style requirements in the "Contribution policy" section
 Now let's talk about this in a little more detail.
 The purpose of a style guide is to keep the code looking consistent.
 This is less for visual appeal than it is for avoiding confusion.
-When all of your functions and varible names have the same style, you can focus your understanding on the code itself.
+When all of your functions and variable names have the same style, you can focus your understanding on the code itself.
 
 You don't _need_ to have a code style guide if your project is small and you truly do not care.
 The point of a style guide isn't to establish the One True Way™ that everyone must write code, it's to establish a common practice.
@@ -211,7 +211,7 @@ Do they belong on the same line?
 If they're on a different line, where do you indent them to?
 * **Line length.**
 Are you still rocking an 80-character terminal?
-* **Docmentation requirements.**
+* **Documentation requirements.**
 How much documentation needs to be in the code?
 What should it look like?
 * **Language-specific features to use (or avoid).**
@@ -223,7 +223,7 @@ How do you want those errors presented to the user?
 How should new files be arranged in the repo?
 What sort of naming style do you require?
 * **Module imports.**
-Do you have a preferrerd ordering/grouping?
+Do you have a preferred ordering/grouping?
 Can multiple unrelated imports be on the same line or no?
 
 The more you care — and the more style items you care about — the more important it will be to use a linter to enforce them.
@@ -308,7 +308,7 @@ Unit tests, if you have them.
 This will help make sure individual parts of your code behave as expected and will help avoid introducing regressions.
 If you have a larger project, adding integration tests to make sure all of the pieces work together may be a good idea, too.
 You should also use this as a way to enforce policy:
-DCO signoffs, code style, and so on.
+DCO sign-offs, code style, and so on.
 If the evaluation can be automated, make a check for it.
 
 There are a few tradeoffs for CI workflows, though.
@@ -396,7 +396,7 @@ Some projects like to give out stickers, t-shirts, and other small items.
 
 Honestly, I would avoid this.
 There's a good chance that many of your new contributors will live in a country other than the one you live in.
-That means you'll have to pay international shipping rates, and deal with all of the vagaraties of customs rules.
+That means you'll have to pay international shipping rates, and deal with all of the vagaries of customs rules.
 Some deliveries may take months to reach the recipient and in the meantime you may get tired of answering "do you know where my package is?" emails.
 
 If you have swag to give away, you'll need to decide what activities will earn what items.

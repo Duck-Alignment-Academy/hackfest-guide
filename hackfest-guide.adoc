@@ -1,6 +1,6 @@
 = Maintainer's Guide to Hackfests
 Ben Cotton <quack@duckalignment.academy>
-0.1, August 2026, Writing the thing
+1.0, September 2026, Initial release
 :doctype: book
 :backend: docbook
 :front-cover-image: image::images/cover.png[]

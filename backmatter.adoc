@@ -8,6 +8,8 @@ Relax.
 === Credits
 
 * Written by https://duckalignment.academy[Ben Cotton]
+* Cover image from https://flic.kr/p/cm3aww[Control] by Tristan Ferne, used under https://creativecommons.org/licenses/by/2.0/deed.en[CC BY 2.0].
+Edited by Ben Cotton.
 
 === License and contributions
 

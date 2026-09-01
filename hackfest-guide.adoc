@@ -3,8 +3,9 @@ Ben Cotton <quack@duckalignment.academy>
 0.1, August 2026, Writing the thing
 :doctype: book
 :backend: docbook
+:front-cover-image: image::images/cover.png[]
+:notitle:
 :url-repo: https://github.com/Duck-Alignment-Academy/hackfest-guide
-
 
 include::introduction.adoc[]
 include::before.adoc[]

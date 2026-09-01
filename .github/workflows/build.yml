@@ -56,4 +56,5 @@ jobs:
             hackfest-guide.pdf \
             hackfest-guide.epub \
             --title "Version ${RELEASE_TAG}" \
-            --generate-notes
+            --generate-notes \
+            --draft

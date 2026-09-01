@@ -49,7 +49,7 @@ jobs:
           RELEASE_TAG: ${{ github.ref_name}}
         run: |
           gh release create "${RELEASE_TAG}" \
-            hackfest-guide-${{ github.sha }}/hackfest-guide.pdf \
-            hackfest-guide-${{ github.sha }}/hackfest-guide.epub \
+            hackfest-guide.pdf \
+            hackfest-guide.epub \
             --title "Version ${RELEASE_TAG}" \
             --generate-notes

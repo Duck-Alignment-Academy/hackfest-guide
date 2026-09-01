@@ -2,12 +2,14 @@
 == Backmatter
 === Version History
 
-It's still a work in progress.
-Relax.
+==== Version 1.0 — 1 September 2026
+
+Initial version.
+Everything is new since the previous release.
 
 === Credits
 
-* Written by https://duckalignment.academy[Ben Cotton]
+* Written by https://duckalignment.academy[Ben Cotton].
 * Cover image from https://flic.kr/p/cm3aww[Control] by Tristan Ferne, used under https://creativecommons.org/licenses/by/2.0/deed.en[CC BY 2.0].
 Edited by Ben Cotton.
 

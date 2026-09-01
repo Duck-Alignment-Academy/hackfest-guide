@@ -13,6 +13,9 @@ on:
       - reopened
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   build-book:
     runs-on: ubuntu-latest
@@ -40,10 +43,13 @@ jobs:
     steps:
       - name: Download files
         uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # tag=v8.0.1
-      - name: Create release
-        uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # tag=v3.0.3
-        with:
-          draft: true
-          files: |
-            hackfest-guide-${{ github.sha }}/hackfest-guide.pdf
-            hackfest-guide-${{ github.sha }}/hackfest-guide.epub
+      - name: Create Release via GitHub CLI
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Required for the gh CLI to authenticate
+          RELEASE_TAG: ${{ gitub.ref_name}}
+        run: |
+          gh release create "${RELEASE_TAG}" \
+            hackfest-guide-${{ github.sha }}/hackfest-guide.pdf \
+            hackfest-guide-${{ github.sha }}/hackfest-guide.epub \
+            --title "Version ${RELEASE_TAG}" \
+            --generate-notes

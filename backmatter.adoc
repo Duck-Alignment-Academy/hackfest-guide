@@ -23,8 +23,7 @@ You are also welcome to submit a pull request for any valid issue.
 
 === About the author
 
-Ben Cotton is the Open Source & Ecosystem Lead at Kusari.
-He previously led open source strategy and messaging at Docker and before that was the Fedora Program Manager at Red Hat for five years.
+Ben Cotton has led open source work at Kusari, Docker, and as the Fedora Program Manager at Red Hat.
 This guide, of course, does not represent the views of any current or past employer.
 Ben has been active in Fedora and other open source communities for nearly two decades.
 His career has taken him through the public and private sector in roles that include desktop support, high-performance computing administration, marketing, and program management.

@@ -73,7 +73,7 @@ This allows you to respond quickly, consistently, and in-depth without having to
 
 I left this section out of the "Before" part on purpose.
 You'll want to wait and see what sort of replies you actually send repeatedly before you go through the trouble of making them canned replies.
-If your platofrm does not support canned replies, you can keep them in a file for easy copy-paste.
+If your platform does not support canned replies, you can keep them in a file for easy copy-paste.
 The cilium project has a https://github.com/cilium/cilium/tree/main/contrib/replies[good list] if you need some inspiration.
 
 === Promote your project and contributors

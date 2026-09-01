@@ -1,8 +1,10 @@
 ## Technical terms
 ai
 backend
+bugfixes
 camelCase
 CI
+codebase
 config
 DCO
 doctype
@@ -10,6 +12,8 @@ frontend
 linter
 md
 README
+repo
+repos
 unmerged
 url
 
@@ -39,6 +43,7 @@ et
 findable
 hackfest
 hackfests
+impactful
 intentioned
 limitedly
 plusses
@@ -48,6 +53,7 @@ signoff
 spammy
 tradeoffs
 triager
+triaging
 untrusted
 verby
 woohoo
